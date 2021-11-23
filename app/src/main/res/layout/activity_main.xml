@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#1c1c1c"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="bottom"
+        android:padding="30dp"
+        android:background="#333333"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            tools:text="2+2+2" />
+
+        <TextView
+            android:id="@+id/output"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:textSize="55sp"
+            android:textColor="#008000"
+            tools:text="6" />
+
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="4"
+        android:background="#333333">
+
+        <TableRow>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_clear"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:background="@drawable/knopka"
+                style="@style/Button_Style"
+                android:text="C"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_left"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:background="@drawable/knopka"
+                style="@style/Button_Style"
+                android:text="("/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_right"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:background="@drawable/knopka"
+                style="@style/Button_Style"
+                android:text=")"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_delenie"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_weight="1"
+                android:background="@drawable/knopka3"
+                style="@style/Button_Style"
+                android:text="÷"/>
+
+        </TableRow>
+
+        <TableRow>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_7"
+                android:layout_width="wrap_content"
+                android:layout_height="85dp"
+                android:background="@drawable/knopka"
+                style="@style/Button_Style"
+                android:text="7"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_8"
+                android:layout_width="wrap_content"
+                android:layout_height="85dp"
+                android:background="@drawable/knopka"
+                style="@style/Button_Style"
+                android:text="8"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_9"
+                android:layout_width="wrap_content"
+                android:layout_height="85dp"
+                android:background="@drawable/knopka"
+                style="@style/Button_Style"
+                android:text="9"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_ymnoz"
+                android:layout_width="wrap_content"
+                android:layout_height="85dp"
+                android:layout_weight="1"
+                android:background="@drawable/knopka3"
+                style="@style/Button_Style"
+                android:text="×"/>
+
+        </TableRow>
+
+        <TableRow>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_4"
+                android:layout_width="wrap_content"
+                android:layout_height="85dp"
+                android:background="@drawable/knopka"
+                style="@style/Button_Style"
+                android:text="4"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_5"
+                android:layout_width="wrap_content"
+                android:layout_height="85dp"
+                android:background="@drawable/knopka"
+                style="@style/Button_Style"
+                android:text="5"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_6"
+                android:layout_width="wrap_content"
+                android:layout_height="85dp"
+                android:background="@drawable/knopka"
+                style="@style/Button_Style"
+                android:text="6"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_minus"
+                android:layout_width="wrap_content"
+                android:layout_height="85dp"
+                android:layout_weight="1"
+                android:background="@drawable/knopka3"
+                style="@style/Button_Style"
+                android:text="-"/>
+
+        </TableRow>
+
+        <TableRow>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_1"
+                android:layout_width="wrap_content"
+                android:layout_height="85dp"
+                android:background="@drawable/knopka"
+                style="@style/Button_Style"
+                android:text="1"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_2"
+                android:layout_width="wrap_content"
+                android:layout_height="85dp"
+                android:background="@drawable/knopka"
+                style="@style/Button_Style"
+                android:text="2"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_3"
+                android:layout_width="wrap_content"
+                android:layout_height="85dp"
+                android:background="@drawable/knopka"
+                style="@style/Button_Style"
+                android:text="3"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_plus"
+                android:layout_width="wrap_content"
+                android:layout_height="85dp"
+                android:layout_weight="1"
+                android:background="@drawable/knopka3"
+                style="@style/Button_Style"
+                android:text="+"/>
+
+        </TableRow>
+
+        <TableRow>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_0"
+                android:layout_width="wrap_content"
+                android:layout_height="85dp"
+                android:background="@drawable/knopka"
+                style="@style/Button_Style"
+                android:text="0"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_zap"
+                android:layout_width="wrap_content"
+                android:layout_height="85dp"
+                android:background="@drawable/knopka"
+                style="@style/Button_Style"
+                android:text="."/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_ravno"
+                android:layout_width="wrap_content"
+                android:layout_height="85dp"
+                android:layout_weight="1"
+                android:background="@drawable/knopka2"
+                style="@style/Button_Style"
+                android:text="="/>
+
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
